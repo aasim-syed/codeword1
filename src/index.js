@@ -5,13 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Services from './Services';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App/>
+import logo from './logo.svg';
+
+import Navbar from './Components/Navbar';
+import Section from './Components/Section';
+import Logos from './Components/Logos';
+
+function App() {
+  return (
+    <>
+    <Navbar/>
+    <Section/>
     
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    </>
+  );
+}
+
+export default App;
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
